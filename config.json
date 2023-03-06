@@ -1,0 +1,33 @@
+{
+    "MEMS_MODULES": [
+        {
+            "SCADA": [
+                {
+                    "FIRE": {
+                        "ProcessPath": "/home/root/fire",
+                        "LogFile": "/home/root/scada_fire.log",
+                        "FireInterface": {
+                            "Type": "serial",
+                            "Configration": {
+                                "Duplex": "half",
+                                "BaudRate": 9600,
+                                "Data": 8,
+                                "StopBit": 1,
+                                "Parity": "None",
+                                "FlowControl": "None"
+                            }
+                        },
+                        "MqttServerInterface": {
+                            "Type": "tcp,udp,socket,can"
+                        }
+                    },
+                    "OTHERS": {}
+                }
+            ]
+        },
+        {
+            "OTHERS": []
+        }
+    ]
+}
+
